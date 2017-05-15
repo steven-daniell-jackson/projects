@@ -1,0 +1,42 @@
+/*!
+This is a generated stylesheet
+Written by Steven Jackson - 21 July 2016 
+
+IMPORTANT:
+DO NOT EDIT THE CSS DIRECTLY
+*/ 
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import 'helper/variables';
+@import 'helper/_mixin';
+
+// Override Variables.
+$base-font-stack: 'Lato', sans-serif;
+$base-font-size: 1.2em;
+$base-font-color: #616161;
+$base-paragraph-font-size: 1.3em;
+
+// Headings (Headings up till H6 availble)
+$base-heading-color: #1c1c1c;
+$base-h1-font-size : 2em;
+$base-h2-font-size : 1.7em;
+$base-h3-font-size : 1.17em;
+
+// Links
+$base-text-link-color: $white;
+$base-background-link-color: #222;
+$base-link-padding: 20px 10px;
+
+
+
+// Custom styles
+
+p {border-top: 1px solid #eee; @include small-padding-spacer();}
+
+
+
+
+
+// Load __base.scss last so that variables are overwritten
+@import 'helper/_base';
