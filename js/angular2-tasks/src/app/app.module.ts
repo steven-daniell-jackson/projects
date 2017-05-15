@@ -7,24 +7,32 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { MainMenuComponent } from './common/main-menu/main-menu.component';
 import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { ContentAreaComponent } from './common/content-area/content-area.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+
+const appRoutes: Routes = [
+  { path: 'about', component: AboutComponent },
+  { path: '', component: HomepageComponent }
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactComponent,
     TaskListComponent,
     MainMenuComponent,
     SideNavComponent,
-    ContentAreaComponent
+    ContentAreaComponent,
+    HomepageComponent,
+    ContactPageComponent
   ],
   imports: [
+   RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
     HttpModule,
