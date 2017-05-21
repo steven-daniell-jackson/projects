@@ -13,9 +13,11 @@ import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { ContentAreaComponent } from './common/content-area/content-area.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { TaskDataComponent } from './task-data/task-data.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
+  { path: 'all-tasks', component: TaskListComponent },
   { path: '', component: HomepageComponent }
 ];
 
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     SideNavComponent,
     ContentAreaComponent,
     HomepageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    TaskDataComponent
   ],
   imports: [
    RouterModule.forRoot(appRoutes),
