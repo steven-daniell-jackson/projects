@@ -11,7 +11,7 @@ import { TasksList } from '../tasks-list';
         <th>Client</th>
         <th>Platform</th>
         <th>URL</th>
-        <th>WorK Done</th>
+        <th>Work Done</th>
         <th>Date (m/y)</th>
       </tr>
       </thead>
@@ -19,8 +19,7 @@ import { TasksList } from '../tasks-list';
       <tr *ngFor="let task of tasks | slice:0:10 ;">
         <td>{{task.clientName}}</td>
         <td>{{task.platform}}</td>
-        <td>{{task.url}}</td>
-        <td><a href="{{task.platform}}">{{task.platform}}</a></td>
+        <td><a href="{{task.url}}">{{task.url}}</a></td>
         <td>{{task.workDone}}</td>
         <td>{{task.monthFilter}} {{task.yearFilter}}</td>
         </tbody>

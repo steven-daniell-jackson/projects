@@ -16,7 +16,7 @@ tasksData(res:Response){
 }
 
 getTasks(): Observable<TasksList[]>{
-	return this.http.get('https://stevenjackson2017.herokuapp.com/api').map(this.tasksData);
+	return this.http.get('https://stevenjackson2017.herokuapp.com/api?month=december').map(this.tasksData);
 } 
 
 }
